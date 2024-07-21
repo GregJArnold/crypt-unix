@@ -12,10 +12,12 @@
 	"engines": {
 		"node": ">16"
 	},
-	"files": ["dist/**"],
+	"files": [
+		"dist/**"
+	],
 	"repository": {
 		"type": "git",
-		"url": "git@github.com:GregJArnold/js-unix-crypt.git"
+		"url": "git+ssh://git@github.com/GregJArnold/js-unix-crypt.git"
 	},
 	"keywords": [
 		"unix",
