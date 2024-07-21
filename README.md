@@ -8,7 +8,7 @@ A pure-JavaScript library to provide UNIX/Linux `crypt(1)`.  It uses Node's `cry
 | 1                 | MD5     | :x:       |
 | 2, 2a, 2b, 2x, 2y | bcrypt  | :x:       |
 | 3                 | NTHASH  | :x:       |
-| 5                 | SHA-256 | :x:       |
+| 6                 | SHA-256 | ✅        |
 | 6                 | SHA-512 | ✅        |
 | 7                 | scrypt  | :x:       |
 
