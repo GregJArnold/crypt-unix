@@ -1,5 +1,5 @@
 {
-	"name": "unix-crypt",
+	"name": "crypt-unix",
 	"version": "0.1.0",
 	"description": "A Node.JS implementation of the Unix/Linux crypt(3) call.",
 	"main": "dist/index.js",
@@ -17,7 +17,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "git+ssh://git@github.com/GregJArnold/js-unix-crypt.git"
+		"url": "git+ssh://git@github.com/GregJArnold/crypt-unix.git"
 	},
 	"keywords": [
 		"unix",
@@ -28,9 +28,9 @@
 	"author": "Greg J. Arnold",
 	"license": "BSD-3-Clause",
 	"bugs": {
-		"url": "https://github.com/GregJArnold/js-unix-crypt/issues"
+		"url": "https://github.com/GregJArnold/crypt-unix/issues"
 	},
-	"homepage": "https://github.com/GregJArnold/js-unix-crypt#readme",
+	"homepage": "https://github.com/GregJArnold/crypt-unix#readme",
 	"devDependencies": {
 		"@types/jest": "^29.5.12",
 		"@types/node": "^20.14.11",

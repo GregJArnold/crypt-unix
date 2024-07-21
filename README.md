@@ -1,4 +1,4 @@
-# unix-crypt
+# crypt-unix
 A pure-JavaScript library to provide UNIX/Linux `crypt(1)`.  It uses Node's `crypto` for the cryptography.  This tool allows you to generate and verify passwords as used in UNIX's/Linux's `/etc/shadow` file, or other tools that generate the same format.
 
 | ID                | Scheme  | Supported |
@@ -18,7 +18,7 @@ The unsupported formats will be added in future releases - `v1.0.0` should have 
 This file just has the default export: `crypt(string password, string salt): boolean`.
 
 ```typescript
-import crypt from 'unix-crypt';
+import crypt from 'crypt-unix';
 
 const hashedPassword = "$6$saltstring$svn8UoSVapNtMuq1ukKS4tPQd8iKwSMHWjl/O817G3uBnIFNjnQJuesI68u4OTLiBFdcbYEdFCoEOfaS35inz1";
 
