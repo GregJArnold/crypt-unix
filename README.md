@@ -5,10 +5,10 @@ A pure-JavaScript library to provide UNIX/Linux `crypt(1)`.  It uses Node's `cry
 | ----------------- | ------- | --------- |
 |	                  | DES     | :x:       |
 | _                 | BSDi    | :x:       |
-| 1                 | MD5     | :x:       |
+| 1                 | MD5     | ✅        |
 | 2, 2a, 2b, 2x, 2y | bcrypt  | :x:       |
 | 3                 | NTHASH  | :x:       |
-| 6                 | SHA-256 | ✅        |
+| 5                 | SHA-256 | ✅        |
 | 6                 | SHA-512 | ✅        |
 | 7                 | scrypt  | :x:       |
 

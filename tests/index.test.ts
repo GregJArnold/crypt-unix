@@ -103,3 +103,36 @@ describe('testing sha512crypt file', () => {
 		});
 	});
 });
+describe('testing md5crypt', () => {
+	const tests = [
+		{
+			name: "Basic test",
+			salt: "$1$saltstr1",
+			pass: "Hello world!",
+			value: "$1$saltstr1$TGPkMH/sRVXxD4j8gJ8Vl1",
+		},
+		{
+			name: "Too-long salt string",
+			salt: "$1$saltstring",
+			pass: "Hello world!",
+			value: "$1$saltstri$YMyguxXMBpd2TEZ.vS/3q1",
+		},
+		{
+			name: "Short salt string",
+			salt: "$1$salt",
+			pass: "Hello world!",
+			value: "$1$salt$wa8aFuC3rkp5bjoBIGTc41",
+		},
+		{
+			name: "Hashing a longer string",
+			salt: "$1$saltsalt$",
+			pass: "A longer string to hash",
+			value: "$1$saltsalt$RtXXOeRlX6Gasxuq2h4Rf/",
+		},
+	];
+	tests.forEach(t => {
+		test(t.name, () => {
+			expect(crypt(t.pass, t.salt)).toBe(t.value);
+		});
+	});
+});
